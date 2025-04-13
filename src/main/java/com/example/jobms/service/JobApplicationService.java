@@ -2,6 +2,7 @@ package com.example.jobms.service;
 
 import com.example.jobms.model.JobApplication;
 import com.example.jobms.repository.JobApplicationRepository;
+import org.springframework.stereotype.Service;
 
 /**
  * JobApplicationService handles the core business logic for job applications.
@@ -15,6 +16,7 @@ import com.example.jobms.repository.JobApplicationRepository;
  * ✅ This also follows the **Dependency Inversion Principle (DIP)**:
  *    - Depends on abstractions (NotificationService) instead of concrete implementations.
  */
+@Service
 public class JobApplicationService {
     private final JobApplicationRepository repository;
     private final NotificationService notificationService;

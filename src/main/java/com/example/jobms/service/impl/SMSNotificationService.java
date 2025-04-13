@@ -2,6 +2,7 @@ package com.example.jobms.service.impl;
 
 import com.example.jobms.model.JobApplication;
 import com.example.jobms.service.NotificationService;
+import org.springframework.stereotype.Service;
 
 /**
  * SMSNotificationService is a concrete implementation of the NotificationService interface.
@@ -10,6 +11,7 @@ import com.example.jobms.service.NotificationService;
  * This class also supports the Open/Closed Principle (OCP) — we can add this new type
  * of notification without changing any existing code, just by implementing the interface.
  */
+@Service
 public class SMSNotificationService implements NotificationService {
 
     /**

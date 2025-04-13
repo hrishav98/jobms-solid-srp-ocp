@@ -2,6 +2,7 @@ package com.example.jobms.service.impl;
 
 import com.example.jobms.model.JobApplication;
 import com.example.jobms.service.NotificationService;
+import org.springframework.stereotype.Service;
 
 /**
  * EmailNotificationService is a concrete implementation of the NotificationService interface.
@@ -10,6 +11,7 @@ import com.example.jobms.service.NotificationService;
  * This class demonstrates the Open/Closed Principle (OCP) by extending functionality
  * (email notifications) without modifying the core application logic.
  */
+@Service
 public class EmailNotificationService implements NotificationService {
 
     /**
